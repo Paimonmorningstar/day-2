@@ -1,16 +1,16 @@
 using System;
 using System.Collections.Generic;
- using System.Linq;
+using System.Linq;
 namespace day_1
 {
     class Program
     {
-    static void Main(string[] args)
+        static void Main(string[] args)
         {
 
             ManageMember.ListMember();
 
-            while(true)
+            while (true)
             {
                 Console.WriteLine("**");
                 Console.WriteLine("MENU");
@@ -24,12 +24,12 @@ namespace day_1
 
                 Console.WriteLine("Select function : ");
                 int key = Convert.ToInt32(Console.ReadLine());
-                switch(key)
+                switch (key)
                 {
                     case 1:
                         ManageMember.FindMale();
                         break;
-                    
+
                     case 2:
                         ManageMember.FindOldest();
                         break;
@@ -41,12 +41,12 @@ namespace day_1
                     case 4:
                         ManageMember.FindYear();
                         break;
-                    
+
                     case 5:
                         ManageMember.FindFirstPersonWasBornHaNoi();
                         break;
-                    
-                    case 6: 
+
+                    case 6:
                         Environment.Exit(-1);
                         break;
                     default:
